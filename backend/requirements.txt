@@ -1,0 +1,7 @@
+fastapi
+pandas
+python-multipart
+deta
+matplotlib==3.5.1
+requests
+uvicorn

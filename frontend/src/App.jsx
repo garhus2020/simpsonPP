@@ -49,7 +49,7 @@ const handleFile=(e)=>{
   Setfile(e.target.files[0])
   const ColumnData=new FormData();
   ColumnData.append('data_file',e.target.files[0])
-  axios.post("https://v08bpt.deta.dev/dropdown/",ColumnData).then(res=>res.data)
+  axios.post("https://backend-1-y6964014.deta.app/dropdown/",ColumnData).then(res=>res.data)
   .then(res=>{
     setcolumn(JSON.parse(res.columns))
     setcolumnValues(JSON.parse(res.column_values))
@@ -67,7 +67,7 @@ const handleSumbit=(e)=>{
     formData.append(key,AllData[key])
   }
   formData.append('data_file',file);
-  axios.post("https://v08bpt.deta.dev/confounder/",formData).then(res=>res.data).then(res=>{
+  axios.post("https://backend-1-y6964014.deta.app/confounder/",formData).then(res=>res.data).then(res=>{
     SetData(res);
     console.log(res);
     SetDataLoading(false)
