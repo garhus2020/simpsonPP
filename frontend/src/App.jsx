@@ -108,7 +108,7 @@ useEffect(()=>{
 <ToastContainer />
      <Paper sx={{paddingBlock:"40px",marginBottom:"40px"}} elevation={6}>
      <Typography variant='h3' color="primary">
-      Simpson's Paradox
+      Confounding Variables
       </Typography>
      <Typography variant='h6' color="primary" sx={{marginTop:"30px",marginBottom:"20px"}}>
     The first step is to drop your file
